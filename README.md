@@ -1,0 +1,2 @@
+# lemonmint
+a ghost theme
