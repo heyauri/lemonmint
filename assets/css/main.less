@@ -65,14 +65,25 @@ a，a:hover{
    CSS reset
    ========================================================================== */
 body.lemon-mint{
-    .site-header {
+    .index.site-header {
         padding-top: 36px;
         padding-bottom: 36px;
         background: #676767 repeat center center;
         background-size: contain;
-
         .site-logo{
             max-height:240px ;
+        }
+    }
+
+    .content-page.site-header {
+        .site-nav-logo {
+            padding: 0;
+            height: 40px;
+            line-height: 40px;
+        }
+        .site-nav-logo img{
+            height: 32px;
+            margin: 4px auto;
         }
     }
 
@@ -92,7 +103,7 @@ body.lemon-mint{
 
         img.logo{
             position: absolute;
-            top:60%;
+            top:63%;
             left: 50%;
             width: 60%;
             transform: translate(-50%,-50%);

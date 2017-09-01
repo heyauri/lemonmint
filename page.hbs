@@ -3,7 +3,7 @@
 into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
-<header class="site-header outer">
+<header class="site-header outer content-page">
     <div class="inner">
         {{> "site-nav"}}
     </div>
@@ -13,7 +13,6 @@ into the {body} of the default.hbs template --}}
 
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
-
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
             <header class="post-full-header">
