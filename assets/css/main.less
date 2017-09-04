@@ -62,7 +62,7 @@ a，a:hover{
 
 
 /* ==========================================================================
-   CSS reset
+   basic CSS
    ========================================================================== */
 body.lemon-mint{
     .index.site-header {
@@ -103,11 +103,28 @@ body.lemon-mint{
 
         img.logo{
             position: absolute;
-            top:63%;
+            top:64%;
             left: 50%;
             width: 60%;
             transform: translate(-50%,-50%);
         }
+    }
+
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-spacebetween{
+        justify-content: space-between;
+    }
+
+    .width-full{
+        width: 100%;
     }
 }
 
