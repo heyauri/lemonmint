@@ -5,6 +5,11 @@
 
 
 
+/* ==========================================================================
+   basic CSS
+   ========================================================================== */
+
+
 @supports (flex-wrap: wrap) {
     body {
         display: flex;
@@ -54,16 +59,7 @@ body {
     display: block;
 }
 
-a，a:hover{
-    text-decoration: none;
-}
 
-
-
-
-/* ==========================================================================
-   basic CSS
-   ========================================================================== */
 body.lemon-mint{
     .index.site-header {
         padding-top: 36px;
@@ -84,6 +80,11 @@ body.lemon-mint{
         .site-nav-logo img{
             height: 32px;
             margin: 4px auto;
+        }
+
+        &.blog-cover{
+            background-size: contain;
+            background-repeat:repeat;
         }
     }
 
@@ -169,7 +170,7 @@ body.lemon-mint{
     text-shadow: none;
     color: @color-blue-60;
     cursor: pointer;
-    background: @color-white;
+    background: transparent;
     transition: color,border-color ease 0.3s;
     border-radius: 2em;
 
@@ -218,9 +219,8 @@ body.lemon-mint{
     right: 0;
     background: @color-gray-95;
     border-left: 1px solid @color-gray-90;
-    z-index: 400;
+    z-index: 1200;
     overflow: hidden;
-    font-family: 'Fira Sans', sans-serif;
     box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
     transform: translate3d(16em,0,0);
     transition: all ease-out 0.25s;
@@ -347,6 +347,30 @@ body.lemon-mint{
     font-weight: 500;
 }
 
+
+/* ==========================================================================
+   Media Queries - Smaller than 1270px
+   ========================================================================== */
+
+
+.menu-active .lemon-mint .floating-header{
+    padding-right: 16em;
+}
+
+
+.lemon-mint .floating-header-menu{
+    margin-right:20px;
+    a{
+        color: @color-black-floating;
+        text-decoration: none;
+        font-weight: 400;
+    }
+    a:hover{
+        color: @primary-color;
+        text-decoration: none;
+        cursor:pointer ;
+    }
+}
 
 /* ==========================================================================
    Media Queries - Smaller than 1270px

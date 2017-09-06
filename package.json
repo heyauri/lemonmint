@@ -1,7 +1,7 @@
 {
     "name": "lemonmint",
     "description": "The summer-fresh personal blogging theme devire from Casper and Attlia. Beautiful, minimal and responsive.",
-    "version": "1.0.1",
+    "version": "1.0.5",
     "engines": {
         "ghost": ">=1.2.0"
     },
